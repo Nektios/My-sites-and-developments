@@ -1,0 +1,291 @@
+.main .list-of-restaurants .restoran .restoran-unite {
+  height: 360px;
+  margin: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main .list-of-restaurants .restoran .restoran-unite img {
+  border-radius: 1em;
+  max-width: 100%;
+}
+
+#wrapper {
+  min-width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header {
+  -webkit-box-shadow: 0px 0px 20px #dadada;
+          box-shadow: 0px 0px 20px #dadada;
+  /*delimiter*/
+}
+
+.header .logo-input {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: center;
+      align-self: center;
+  /*delimiter*/
+}
+
+.header .logo-input button {
+  margin: 20px;
+  height: 40px;
+  width: 80px;
+  border: 1px #cccccc solid;
+  background-color: white;
+  outline: none;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.header .logo-input h1 {
+  margin: 20px;
+  font-family: 'Jura', sans-serif;
+  color: #1d1d1d;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.header .logo-input .green-eats {
+  color: #57AD56;
+}
+
+.main {
+  min-width: 100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  /*delimiter*/
+}
+
+.main .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  padding: 60px 0px 60px 0px;
+  max-width: 1300px;
+  /*delimiter*/
+}
+
+.main .search input {
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px #a3a3a3 solid;
+  background-color: rgba(255, 255, 255, 0);
+  margin: 0px 20px 0px 20px;
+}
+
+.main .list-of-restaurants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1300px;
+  margin: 0 auto;
+  /*delimiter*/
+  /*delimiter*/
+}
+
+.main .list-of-restaurants .list-header h2 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main .list-of-restaurants .restoran {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /*delimiter*/
+}
+
+.footer {
+  min-width: 100px;
+  background-color: #2b2b2b;
+  /*delimiter*/
+}
+
+.footer .limitation {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0px 20px 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*delimiter*/
+}
+
+.footer .limitation .head-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 40px 0px 20px 0px;
+  padding: 40px 0px 40px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 2px #464646 solid;
+  /*delimiter*/
+}
+
+.footer .limitation .head-footer .green-eats-footer {
+  color: #57AD56;
+}
+
+.footer .limitation .head-footer h2 {
+  font-size: 40px;
+  font-family: 'Jura', sans-serif;
+  color: white;
+  margin: 0;
+}
+
+.footer .limitation .about-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: 'Roboto', sans-serif;
+  margin: 20px 0px 20px 0px;
+  color: white;
+  border-bottom: 2px #464646 solid;
+  /*delimiter*/
+}
+
+.footer .limitation .about-footer .language {
+  margin: 10px;
+  padding-top: 40px;
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px;
+  /*delimiter*/
+}
+
+.footer .limitation .about-footer .language input {
+  outline: none;
+  width: 220px;
+  height: 40px;
+  text-align: left;
+  font-weight: bold;
+  border: none;
+  background-color: #464646;
+  color: white;
+}
+
+.footer .limitation .about-footer .language img {
+  max-width: 100%;
+  height: 15px;
+  margin: 5px;
+}
+
+.footer .limitation .about-footer .information {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px;
+}
+
+.footer .limitation .about-footer .help {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px;
+}
+
+.footer .limitation .download-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 40px 0px 20px 0px;
+  padding: 0px 0px 40px 0px;
+  border-bottom: 2px #464646 solid;
+  /*delimiter*/
+}
+
+.footer .limitation .download-footer img {
+  margin: 10px;
+}
+
+.footer .limitation .copyrights {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 40px 0px 20px 0px;
+  /*delimiter*/
+}
+
+.footer .limitation .copyrights p {
+  margin: 10px;
+}
+/*# sourceMappingURL=style.css.map */

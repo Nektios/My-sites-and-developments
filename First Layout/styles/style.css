@@ -1,0 +1,237 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to top left, rgb(255, 114, 114), rgb(255, 165, 113));
+}
+/*Оболочка*/
+#wrapper {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(136, 136, 252);
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    animation-name: head-site;
+    animation-duration: 1s;
+}
+/*Шапка*/
+.first-header {
+    text-align: center;
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+/*Оболочка для навигации*/
+.main-nav {
+    display: flex;
+    justify-content: center;
+    clear: both;
+}
+/*Сама наигация*/
+.ual-nav {
+    display: flex;
+    list-style: none;
+    background-color: rgb(255, 146, 73);
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+/*Настройка навигации*/
+.ual-nav li a {
+    display: flex;
+    padding: 20px;
+    flex-grow: 1;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition-duration: 0.1s;
+}
+/*Оболочка главного содержимого*/
+.main {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    transition-duration: 5s;
+}
+/*Подвал сайта*/
+.footer {
+    display: flex;
+    background-color: rgb(53, 53, 53);
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    white-space: pre-wrap;
+}
+.footer p {
+    margin: 0;
+    padding: 7px;
+    white-space: pre-wrap;
+}
+
+/*Левая навигация(не рабочаяя, в плане ссылки не работают мне было похуй делать тег "а")*/
+.aside-bar {
+    min-width: 250px;
+    background-color: rgb(209, 209, 209);
+    flex-grow: 1;
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+/*Секция с содержимым*/
+.block-section {
+    min-width: 200px;
+    background-color: rgb(255, 255, 255);
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    user-select: none;
+}
+/*Настройка левой навигации*/
+.aside-bar li{
+    list-style: none;
+    padding: 20px;
+    border: 2px solid rgb(48, 48, 48);
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none;
+    transition-duration: 0.2s;
+    text-align: center;
+}
+/*Настройка левой навигации*/
+.aside-bar ul {
+    padding: 0;
+}
+/*Внутренний контент блока .bloc-section*/
+.first-information {
+    padding: 15px;
+    flex-grow: 1;
+}
+.second-information {
+    padding: 15px;
+    flex-grow: 1;
+}
+.third-information {
+    padding: 15px;
+    flex-grow: 1;
+}
+.four-information {
+    padding: 15px;
+    flex-grow: 1;
+}
+/*Настройка изображений*/
+.adaptive_photo {
+    float: right;
+    max-width: 100%;
+    height: 200px;
+    transition-duration: 0.4s;
+}
+/*Настройка при наведении изображения*/
+.adaptive_photo:hover {
+    transform: scale(1.05);
+    transition-duration: 0.2s;
+}
+/*Кнопки в внутри*/
+.button {
+  color: #fff; 
+  user-select: none; 
+  background: rgb(241, 76, 76); 
+  padding: 5px 30px 5px 30px;
+  outline: none;
+  border: 0;
+  font-weight: bold;
+  transition-duration: 0.2s;
+}
+/*Настройка при наведении кнопок*/
+.button:hover {
+    background: rgb(182, 37, 37); 
+  }
+  /*Настройка при нажатии кнопок*/
+  .button:active {
+    background: rgb(0, 0, 0); 
+  }
+  /*Настройка при наведении главной навигации*/
+  .ual-nav a:hover {
+      color: white;
+      transition-duration: 0.1s;
+  }
+  /*Медиа запрос при максимальной ширине 520 пикселей (Меняются положение объектов и иди нахуй)*/
+  @media screen and (max-width: 520px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        transition-duration: 0.2s;
+    }
+    .aside-bar li {
+        list-style: none;
+        padding: 10px;
+        border: 2px solid rgb(48, 48, 48);
+        border-left-style: none;
+        border-right-style: none;
+        border-top-style: none;
+        text-align: center;
+        transition-duration: 0.3s;
+        font-size: 13px;
+    }
+    .aside-bar ul {
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .ual-nav li a {
+        display: flex;
+        padding: 10px;
+        flex-grow: 1;
+        justify-content: center;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        transition-duration: 0.2s;
+        font-size: 14px;
+    }
+    .adaptive_photo {
+        max-width: 100%;
+        height: 200px;
+        float: none;
+    }
+    .block-section {
+        min-width: 100px;
+        background-color: rgb(255, 255, 255);
+        flex-grow: 3;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        user-select: none;
+        text-align: center;
+    }
+    .block-section p{
+        font-size: 14px;
+    }
+    .aside-bar {
+        min-width: 10px;
+        background-color: rgb(209, 209, 209);
+        flex-grow: 1;
+        display: flex;
+        list-style: none;
+        font-weight: bold;
+    }
+  }
+  /* Для адаптивности фотографии при 290 пикселей ширины */
+  @media screen and (max-width: 290px) {
+    .adaptive_photo {
+        max-width: 100%;
+        height: 130px;
+        float: none;
+        transition-duration: 0.4s;
+    }
+  }
+  @keyframes head-site{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
