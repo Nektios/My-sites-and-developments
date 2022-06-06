@@ -338,6 +338,9 @@
 #wrapper .main .download-section .fifth-limitation .download-links .download-links-text p {
   max-width: 500px;
 }
+#wrapper .main .download-section .fifth-limitation .download-links .download-links-text-gplay-apps img {
+  margin: 10px 10px 10px 0px;
+}
 #wrapper .main .download-section .fifth-limitation .image-download {
   display: -webkit-box;
   display: -ms-flexbox;
