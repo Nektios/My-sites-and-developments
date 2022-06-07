@@ -15,7 +15,7 @@
 }
 %enumeration-of-benefits-point-style {
     flex-basis: 200px;
-    margin: 50px 20px 50px 20px;
+    margin: 20px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -33,11 +33,15 @@
 }
 %image-point-style {
     margin: 20px;
+    // separation
     img {
         background-color: #F7F8FD;
         padding: 10px;
         border-radius: 0.5em;
     }
+}
+%text-point-style {
+    flex-basis: 400px;
 }
 
 
@@ -56,12 +60,10 @@
             // separation
             .first-limitation {
                 @extend %limitation-style;
-                padding: 10px;
                 // separation
                 .logo-header {
                     display: flex;
                     align-items: center;
-                    flex-basis: 400px;
                     font-family: 'Fredoka One', cursive;
                     color: #446DF6;
                     // separation
@@ -74,7 +76,6 @@
                     align-items: center;
                     justify-content: flex-end;
                     flex-grow: 1;
-                    flex-basis: 400px;
                     // separation
                     .ul-nav {
                         display: flex;
@@ -102,17 +103,11 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    flex-basis: 30%;
-                    padding: 40px;
+                    flex-basis: 40%;
+                    padding: 20px;
                     text-align: left;
                     font-family: 'Cabin', sans-serif;
                     // separation
-                    h2 {
-                        font-size: 30px;
-                    }
-                    p {
-                        font-size: 20px;
-                    }
                     .button {
                         background-color: #446DF6;
                         width: 180px;
@@ -127,7 +122,7 @@
                 .image-header {
                     display: flex;
                     justify-content: center;
-                    flex-basis: 70%;
+                    flex-basis: 60%;
                     // separation
                     img {
                         max-width: 100%;
@@ -153,18 +148,19 @@
                     // separation
                     img {
                         max-width: 100%;
-                        height: 550px;
                     }
                 }
                 .fast-start-points {
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-around;
                     flex-basis: 50%;
                     .first-point {
                         @extend %point-style;
                         .first-point-image {
                             @extend %image-point-style;
+                        }
+                        .first-point-text {
+                            @extend %text-point-style;
                         }
                     }
                     .second-point {
@@ -172,11 +168,17 @@
                         .second-point-image {
                             @extend %image-point-style;
                         }
+                        .second-point-text {
+                            @extend %text-point-style;
+                        }
                     }
                     .thrid-point {
                         @extend %point-style;
                         .thrid-point-image {
                             @extend %image-point-style;
+                        }
+                        .thrid-point-text {
+                            @extend %text-point-style;
                         }
                     }
                     .fourth-point {
@@ -184,6 +186,9 @@
                         .fourth-point-image {
                             @extend %image-point-style;
                         }
+                        .fourht-point-text {
+                            @extend %text-point-style;
+                        }   
                     }
                     
                 }
@@ -191,7 +196,6 @@
         }
         .become-a-partner {
             width: 100%;
-            height: 700px;
             display: flex;
             justify-content: center;
             margin: 20px 0px 20px 0px;
@@ -206,6 +210,7 @@
                     justify-content: center;
                     flex-direction: column;
                     align-items: center;
+                    margin: 20px 0px 20px 0px;
                     flex-grow: 1;
                     flex-basis: 100px;
                     text-align: center;
@@ -224,6 +229,7 @@
                     flex-grow: 1;
                     flex-basis: 100px;
                     justify-content: space-around;
+                    flex-wrap: wrap;
                     // separation
                     .purchase-history {
                         @extend %enumeration-of-benefits-point-style;
@@ -280,17 +286,6 @@
                     justify-content: center;
                     margin: 30px;
                     // separation
-                    .download-links-text {
-                        text-align: left;
-                        font-size: 22px;
-                        // separation
-                        h2 {
-                            max-width: 400px;
-                        }
-                        p {
-                            max-width: 500px;
-                        }
-                    }
                     .download-links-text-gplay-apps {
                         img {
                             margin: 10px 10px 10px 0px;
@@ -325,7 +320,6 @@
                 .logo-header-footer {
                     display: flex;
                     align-items: center;
-                    flex-basis: 400px;
                     font-family: 'Fredoka One', cursive;
                     // separation
                     h1 {
@@ -337,7 +331,6 @@
                     align-items: center;
                     justify-content: flex-end;
                     flex-grow: 1;
-                    flex-basis: 400px;
                     // separation
                     .ul-nav-footer {
                         display: flex;
@@ -353,5 +346,59 @@
                 }
             }
         }
+    }
+}
+@media screen and (max-width: 1080px) {
+    .first-limitation {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    .second-limitation {
+        flex-direction: column-reverse;
+        // separation
+        .header-text {
+            align-items: center;
+            h2 {
+                max-width: 450px;
+                text-align: center;
+            }
+            p {
+                max-width: 450px;
+                text-align: center;
+            }
+        }
+    }
+    .image-header {
+        img {
+            max-height: 500px;
+        }
+    }
+    .thrid-limitation {
+        flex-direction: column;
+        align-items: center;
+        // separation
+        .fast-start-image {
+            img {
+                max-height: 600px;
+            }
+        }
+        .fast-start-points {
+            font-size: 14px;
+        }
+    }
+    .fifth-limitation {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        // separation
+        .download-links-text {
+            max-width: 500px;
+        }
+    }
+    .first-limitation-footer {
+        flex-direction: column;
+        align-items: center;
     }
 }
