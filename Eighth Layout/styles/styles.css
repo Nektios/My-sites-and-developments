@@ -64,8 +64,14 @@
       flex-basis: 400px;
 }
 
+#wrapper {
+  -webkit-animation-name: head-site;
+          animation-name: head-site;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
 #wrapper .header {
-  min-width: 320px;
+  min-width: 300px;
 }
 #wrapper .header .first-section-of-the-header {
   display: -webkit-box;
@@ -78,6 +84,9 @@
   -webkit-box-shadow: 0px 0px 20px #e6e6e6;
           box-shadow: 0px 0px 20px #e6e6e6;
 }
+#wrapper .header .first-section-of-the-header .first-limitation {
+  padding: 10px;
+}
 #wrapper .header .first-section-of-the-header .first-limitation .logo-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,7 +98,7 @@
   color: #446DF6;
 }
 #wrapper .header .first-section-of-the-header .first-limitation .logo-header h1 {
-  margin: 0px 20px 0px 20px;
+  margin: 0;
 }
 #wrapper .header .first-section-of-the-header .first-limitation .navigation {
   display: -webkit-box;
@@ -114,9 +123,10 @@
       flex-wrap: wrap;
   color: #72727E;
   font-family: "Cabin", sans-serif;
+  padding: 0;
 }
 #wrapper .header .first-section-of-the-header .first-limitation .navigation .ul-nav li {
-  margin: 0px 20px 0px 20px;
+  margin: 5px 20px 5px 20px;
 }
 #wrapper .header .second-section-of-the-header {
   display: -webkit-box;
@@ -168,7 +178,7 @@
   max-width: 100%;
 }
 #wrapper .main {
-  min-width: 320px;
+  min-width: 300px;
 }
 #wrapper .main .fast-start {
   width: 100%;
@@ -202,6 +212,9 @@
           flex-direction: column;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #wrapper .main .become-a-partner {
   width: 100%;
@@ -337,6 +350,9 @@
 #wrapper .main .download-section .fifth-limitation .image-download img {
   max-width: 100%;
 }
+#wrapper .footer {
+  min-width: 300px;
+}
 #wrapper .footer .first-section-of-the-header-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -386,9 +402,10 @@
       flex-wrap: wrap;
   font-size: 18px;
   font-family: "Cabin", sans-serif;
+  padding: 0;
 }
 #wrapper .footer .first-section-of-the-header-footer .first-limitation-footer .navigation-footer .ul-nav-footer li {
-  margin: 0px 20px 0px 20px;
+  margin: 5px 20px 5px 20px;
 }
 
 @media screen and (max-width: 1080px) {
@@ -400,8 +417,6 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0;
-    margin: 0;
   }
 
   .second-limitation {
@@ -415,11 +430,7 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .second-limitation .header-text h2 {
-    max-width: 450px;
-    text-align: center;
-  }
-  .second-limitation .header-text p {
+  .second-limitation .header-text h2, .second-limitation .header-text p {
     max-width: 450px;
     text-align: center;
   }
@@ -466,5 +477,57 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .first-limitation-footer .ul-nav-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .first-limitation {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .first-limitation .logo-header {
+    font-size: 0.7em;
+  }
+  .first-limitation .navigation {
+    display: none !important;
+  }
+  .first-limitation .burger {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 30px;
+    height: 30px;
+    background: url("../images/heyta.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+@-webkit-keyframes head-site {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes head-site {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
