@@ -119,8 +119,9 @@
                         text-align: center;
                         color: white;
                         text-decoration: none;
-                        font-family: 'Fredoka One', cursive;
+                        font-family: 'Cabin', sans-serif;
                         border-radius: 0.5em;
+                        font-weight: bold;
                     }
                 }
                 .image-header {
@@ -257,7 +258,6 @@
                     justify-content: center;
                     align-items: center;
                     flex-basis: 100px;
-                    font-family: 'Fredoka One', cursive;
                     // separation
                     .button-parter {
                         background-color: #446DF6;
@@ -267,6 +267,8 @@
                         text-align: center;
                         color: white;
                         border-radius: 0.5em;
+                        font-weight: bold;
+                        font-family: 'Cabin', sans-serif;
                     }
                 }
             }

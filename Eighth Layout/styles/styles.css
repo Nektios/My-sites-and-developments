@@ -161,8 +161,9 @@
   text-align: center;
   color: white;
   text-decoration: none;
-  font-family: "Fredoka One", cursive;
+  font-family: "Cabin", sans-serif;
   border-radius: 0.5em;
+  font-weight: bold;
 }
 #wrapper .header .second-section-of-the-header .second-limitation .image-header {
   display: -webkit-box;
@@ -289,7 +290,6 @@
           align-items: center;
   -ms-flex-preferred-size: 100px;
       flex-basis: 100px;
-  font-family: "Fredoka One", cursive;
 }
 #wrapper .main .become-a-partner .fourth-limitation .button-for-partners .button-parter {
   background-color: #446DF6;
@@ -299,6 +299,8 @@
   text-align: center;
   color: white;
   border-radius: 0.5em;
+  font-weight: bold;
+  font-family: "Cabin", sans-serif;
 }
 #wrapper .main .download-section {
   width: 100%;
