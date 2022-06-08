@@ -432,7 +432,7 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .second-limitation .header-text h2, .second-limitation .header-text p {
+  .second-limitation .header-text h1, .second-limitation .header-text p {
     max-width: 450px;
     text-align: center;
   }
