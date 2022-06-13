@@ -1,0 +1,37 @@
+%inner__style {
+    max-width: 1700px;
+    height: 100%;
+    margin: 0 auto;
+}
+#wrapper {
+    .header {
+        min-width: 320px;
+        height: 800px;
+        background-color: rgb(255, 134, 134);
+        // separator 
+        .header__navigation {
+            width: 100%;
+            height: 100px;
+            background-color: rgb(250, 196, 114);
+             // separator 
+            .header__inner {
+                @extend %inner__style;
+                background-color: rgb(97, 192, 255);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px 10px 0px 10px;
+                .header__list {
+                    .header-list__row {
+                        display: flex;
+                        list-style: none;
+                        padding: 0;
+                        li {
+                            margin: 0px 20px 0px 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
